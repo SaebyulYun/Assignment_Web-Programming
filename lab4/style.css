@@ -1,0 +1,73 @@
+/*
+Saebyul Yun
+041091398
+lab04
+*/
+
+body {
+  padding: 0;
+  margin: 45px 50px;
+}
+
+.warning {
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.formcontainer {
+  padding: 0;
+  margin: 45px 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', Sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', Sans-serif;
+}
+
+.textfield #email, #login, #pass, #pass2 {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+div label {
+  font-size: 20px;
+  font-family: Arial;
+
+}
+.checkbox {
+  margin: 5px 0 8px;
+  padding: 1px 3px;
+}
+
+.checkbox #terms{
+  display: inline-block;
+}
+
+#termsError{
+  display: inline-block;
+}
+
+#submit{
+  background-color: rgb(32, 67, 205); 
+  border: 3px solid rgb(25, 61, 201); 
+  color: white; 
+  padding: 10px 25px; 
+  border-radius: 8px;
+  font-size: medium;
+}
+
+#reset {
+  background-color: rgba(248, 0, 0, 0.842); 
+  border: 3px solid rgba(242, 71, 71, 0.733);
+  color: white; 
+  padding: 10px 25px; 
+  border-radius: 8px;
+  font-size: medium;
+}
