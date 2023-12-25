@@ -1,0 +1,115 @@
+/*
+Saebyul Yun
+041091398
+lab02
+*/
+
+/* set defalt styles for body, h1,h2,h3,p,ul,and li with margin and padding are zero*/
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+   background-color: #f0f0f0;
+   color: #333;
+   line-height: 1.6;
+   font-family: Arial, sans-serif; /*gave the effect of font style sans-serif and Arial for the whole page*/
+}
+header h1{ 
+    background-color: #60594d; 
+    color: #fff; /*text color*/
+    padding: 1rem 0;
+    text-align: center; /*set the hi text location in center*/
+    font-size: 2em; /* set double font size*/
+}
+/*removed list bullets in the navigation menu*/
+nav ul {
+    list-style: none;
+}
+/*gave the effect of displaying list items inline*/
+header li {
+    display: inline;
+}
+/*removed text docoration effect*/
+header a {
+    text-decoration: none;
+    margin:10px;
+    font-weight: 700; /*lmade lik text bold*/
+    color: #fff
+}
+header ul {
+    list-style: none;
+    background-color: #60594d;
+    text-align: center;
+}
+/*set the effect for main elements*/
+main{    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex; /*changed to a flex container*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main ul {
+    list-style: none;
+}
+main ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+article {
+    width: 70%;
+  }
+article img {
+    width: 20%;
+}
+/*gave the effect of aside element*/
+aside {
+    width: 50%;
+    padding: 1rem;
+    background-color: #93a29b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/*set label effect in aside*/
+aside label {
+    display: block;
+    margin: 0.5rem;
+}
+/*tagged the id email sector in aside and gave effect element*/
+aside #email {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+/*tagged the id send sector in aside and gave effect element*/
+aside #send {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 0.5rem;   
+}
+/* used ID sector and linked hover for giving the point cursor */
+#send:hover{
+    cursor: pointer;
+}
+/*gave the effect of footer*/
+footer {
+    background-color: #ddd78d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/*changed screen size less than 768 */
+@media screen and (max-width: 768px){
+    main {
+      flex-direction: column; /* direction in line of text*/
+  }
+/*set the effect of article, section, aside in order to control the margin*/
+    article, section, aside {
+    flex-basis: 100%;
+    margin: 0.5rem 0;
+ }
+}
