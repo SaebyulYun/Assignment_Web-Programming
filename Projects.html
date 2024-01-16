@@ -1,0 +1,75 @@
+<!--
+Saebyul Yun
+041091398
+Assignment 01
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+<!--Used icons for free by fontawesome.com  -->   
+    <script src="https://kit.fontawesome.com/35e6e1a10a.js" crossorigin="anonymous"></script>
+
+<!--connected each files-->
+    <link rel="stylesheet" type="text/css" href="style.CSS"> 
+
+<!-- Added an external JavaScript file with the 'defer' attribute to enable deferred loading -->   
+    <script src="myWeb.js" defer></script>
+  </head>
+  <body>
+
+<!-- Made Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar_logo">
+
+<!-- Logo with a gamepad icon from Font Awsome -->
+          <i class="fa-solid fa-gamepad"></i> 
+          <a href="index.html">My Web</a>
+        </div>      
+
+<!--Added Navigation Menu -->      
+        <ul class="navbar_menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+<!--Added likedin Icons -->       
+      <ul class="navbar_icons">
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul> 
+
+<!--Added menu Icons in the navigation bar -->   
+        <a href="#" class="navbar_toogleBtn">
+          <i class="fa-solid fa-bars"></i>
+      </a>  
+      </nav>
+      <br>
+      <h1>Projects</h1>
+
+<!--Added my project informations-->   
+    <div id="project_container">
+      <img id="image"  src="img"  alt="Project Image">
+      <p id="project-title"></p>
+      <p id="project-description"></p>
+      <p id="project-date"></p>
+  </div>
+    <br>
+    
+<!-- Buttons for displying between Projects images -->
+    <div class="Button">
+        <button id="previous">&laquo; Previous </button>
+        <button id="next" >Next &raquo; </button>
+    </div>
+    <br>
+    <br>
+    <footer>Saebyul Yun, 2023 Copyright</footer>
+</body>
+</html>
+
+
+

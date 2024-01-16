@@ -1,0 +1,261 @@
+/*
+Saebyul Yun
+041091398
+Assignment 01
+*/
+
+/* Effect on the Global styles in my website */
+body {
+
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+.information li a {
+  color: #76a3da;
+}
+
+p a{
+  color: #76a3da;
+}
+
+/*styling for navigation bar*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px; 
+}
+
+.navbar_logo{
+  font-size: 24px;
+  color: white;
+}
+
+.navbar_logo i {
+  color: yellow;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar_menu li{
+  padding: 8px 12px;
+}
+
+/* Effect for background color on hover */
+.navbar_menu li:hover { 
+  background-color: rgb(233, 233, 149); 
+  border-radius: 4px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: yellow;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+/*Function and effect for the menu icon*/
+.navbar_toogleBtn{
+  display: none;
+  position: absolute;
+  color: yellow;
+  right: 32px;
+  font-size: 24px;
+}
+
+/* Styling for the header */
+body h1 { 
+  font-family: 'Trebuchet MS';
+  font-size: 35px;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styling for content */
+#content{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 16px;
+  margin: 16px;
+}
+
+#content img {
+  width: 20vw;
+}
+
+#content #imagewrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#description {
+  text-align:center;
+  font-size: 24px;
+  border: 15px;
+  font-family: 'Trebuchet MS';
+  padding: 16px;
+}
+
+#form{
+  font-size: 20px;
+}
+
+.information li  {
+  text-align: center;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+}
+#Summary {
+  text-align: left;
+}
+
+/* effect for the button styles */
+.Button  button{
+  background-color: #263343; 
+  border: 1px solid rgb(6, 13, 52); 
+  color: rgb(255, 255, 255); 
+  padding: 5px 15px; 
+  cursor: pointer; 
+  float: left;
+  display: flex;
+}
+.Button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Styling for Project section */
+
+.project{
+  text-align:center;
+}
+
+#project_container  {
+  font-family: 'Trebuchet MS';
+  text-align: center;
+}
+
+#image {
+  display: inline-block; 
+  width: 80%;
+
+}
+
+/* styling for the button in contact page */
+.submit button{
+  background-color: #263343; 
+  border: 1px solid rgb(6, 13, 52); 
+  color: white; 
+  padding: 5px 15px; 
+  cursor: pointer; 
+  float: left;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+/* effect for input styles in contact page */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d4d3d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* effect for textarea in contact page */
+textarea[id=message], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d4d1d1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer_I{
+
+  bottom: 0;
+  position:absolute; 
+  justify-content: center; /* Align in the center*/
+}
+
+/* Media query for small screens */
+@media screen and  (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar_toogleBtn {
+    display: block;
+  }
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+
+  #content{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+
+  #content img {
+    width: 80vw;
+  }
+
+  #image {
+    width: 70%; 
+  }
+}

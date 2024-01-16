@@ -1,0 +1,78 @@
+<!--
+Saebyul Yun
+041091398
+Assignment 01
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+<!--Used icons for free by fontawesome.com -->   
+    <script src="https://kit.fontawesome.com/35e6e1a10a.js" crossorigin="anonymous"></script>
+
+<!--connected each files-->
+    <link rel="stylesheet" type="text/css" href="style.CSS"> 
+    
+<!-- Added an external JavaScript file with the 'defer' attribute to enable deferred loading -->   
+    <script src="myWeb.js" defer></script>
+  </head>
+  <body>
+
+<!-- Made Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar_logo">
+
+<!-- Logo with a gamepad icon from Font Awsome -->
+          <i class="fa-solid fa-gamepad"></i> 
+          <a href="index.html">My Web</a>
+        </div>   
+       
+<!--Added Navigation Menu -->      
+        <ul class="navbar_menu">
+          <li><a href="index.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+<!--Added likedin Icons -->       
+      <ul class="navbar_icons">
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul> 
+
+<!--Added menu Icons in the navigation bar -->   
+        <a href="#" class="navbar_toogleBtn">
+          <i class="fa-solid fa-bars"></i>
+      </a>  
+      </nav>
+
+  <h1>Contact Me</h1>
+
+<!-- Made Contact Information -->
+  <div id="form">
+      <form action="Assignment1Form.php" method="post">
+          <fieldset>
+              <input type="text" id="name" name="name" placeholder="Name"><br>
+              <input type="text" id="email" name="email" placeholder="Email"><br>    
+              <input type="text" id="phone" name="phone" placeholder="Phone"><br>       
+              <textarea id="message" name="message" rows="5" cols="50" placeholder="Message"></textarea>
+          </fieldset>
+          <br>
+
+<!-- Made send button -->
+          <div class="submit">
+              <button type="submit">Send</button>
+            </div>
+      </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="footer_I">
+    <footer>Saebyul Yun, 2023 Copyright</footer>
+  </div>
+</body>
+</html>
